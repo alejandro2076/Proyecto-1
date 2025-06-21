@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - ElectroHogar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/img/logo.png" alt="ElectroHogar Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-th"></i>Productos</a></li>
+                    <li><a href="about.html"><i class="fas fa-users"></i>Acerca de Nosotros</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i>Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <span id="user-status"></span>
+                <span class="login-icon"><i class="fas fa-user-circle"></i></span>
+                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+        </div>
+        <div class="search-bar-container">
+            <div class="search-input-group">
+                <input type="text" placeholder="Buscar productos..." id="search-input">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us-section">
+            <h1>Acerca de Nosotros</h1>
+            <p>En ElectroHogar, nos dedicamos a ofrecerte la mejor selección de electrodomésticos para tu hogar. Desde pequeños aparatos de cocina hasta grandes equipos para tu sala de estar, nuestro objetivo es brindarte productos de calidad, innovadores y eficientes que mejoren tu vida diaria.</p>
+
+            <p>Nacimos de la pasión por la tecnología y el deseo de hacer que los hogares sean más cómodos y funcionales. Creemos que cada electrodoméstico es una inversión en tu bienestar y en el de tu familia. Por eso, nos esforzamos en seleccionar solo marcas de prestigio y artículos que cumplan con los más altos estándares de rendimiento y durabilidad.</p>
+
+            <h2>Nuestra Misión</h2>
+            <p>Proveer a nuestros clientes una amplia gama de electrodomésticos de alta calidad a precios competitivos, garantizando una experiencia de compra excepcional y un servicio post-venta confiable.</p>
+
+            <h2>Nuestra Visión</h2>
+            <p>Ser la tienda online de referencia en electrodomésticos, reconocida por nuestra excelencia en productos, innovación y el compromiso inquebrantable con la satisfacción del cliente.</p>
+
+            <h2>Nuestros Valores</h2>
+            <ul>
+                <li><strong>Calidad:</strong> Ofrecemos solo productos que cumplen con los más altos estándares.</li>
+                <li><strong>Confianza:</strong> Construimos relaciones duraderas basadas en la honestidad y la transparencia.</li>
+                <li><strong>Innovación:</strong> Nos mantenemos a la vanguardia de la tecnología para ofrecerte lo último del mercado.</li>
+                <li><strong>Servicio al Cliente:</strong> Tu satisfacción es nuestra prioridad.</li>
+                <li><strong>Sostenibilidad:</strong> Promovemos el uso eficiente de la energía y productos que respeten el medio ambiente.</li>
+            </ul>
+
+            <p>Gracias por elegir **ElectroHogar**. ¡Esperamos ayudarte a equipar el hogar de tus sueños!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ElectroHogar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+<style>
+    /* Estilos para la página Acerca de Nosotros */
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f9e442;
+    color: #192b55;
+    padding: 1em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    height: 130px;
+    margin-right: 10px;
+}
+
+.title-container {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #192b55;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav ul li a {
+    color: #192b55;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #0d1a33;
+}
+
+.main-nav ul li a i {
+    margin-right: 8px;
+    color: #192b55;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-icon,
+.cart-icon {
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #192b55;
+    transition: color 0.3s ease;
+}
+
+.login-icon:hover,
+.cart-icon:hover {
+    color: #0d1a33;
+}
+
+#user-status {
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.search-bar-container {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.search-input-group {
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background-color: white;
+    color: #333;
+}
+
+#search-button {
+    background-color: #192b55;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #0d1a33;
+}
+
+footer {
+    background-color: #192b55;
+    color: #f4f4f4;
+    padding: 30px 0 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-bottom {
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilos para la página Acerca de Nosotros */
+.about-us-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-us-section h1 {
+    font-size: 2.5em;
+    color: #192b55;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f9e442;
+    padding-bottom: 10px;
+}
+
+.about-us-section h2 {
+    font-size: 1.8em;
+    color: #192b55;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.about-us-section p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.about-us-section ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.about-us-section ul li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.about-us-section ul li strong {
+    color: #192b55;
+}
+
+/* Responsive adjustments for About Us page */
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .about-us-section h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .about-us-section h2 {
+        font-size: 1.5em;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .about-us-section p,
+    .about-us-section ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .about-us-section h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .about-us-section h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+}
+</style>
